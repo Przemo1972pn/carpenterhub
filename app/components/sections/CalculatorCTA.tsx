@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function CalculatorCTA() {
   return (
-    <section className="py-16 px-5 bg-gradient-to-r from-[#2D5016] to-[#4A7C2E]">
+    <section className="py-16 px-5 bg-gradient-to-r from-[#5D4337] to-[#3D2B24]">
       <div className="max-w-[800px] mx-auto text-center text-white">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Wypróbuj nasz Kalkulator Stolarski
@@ -12,7 +12,7 @@ export default function CalculatorCTA() {
         </p>
         <Link
           href="/kalkulator"
-          className="inline-block bg-[#D4AF37] text-[#2D5016] px-10 py-4 rounded-full font-bold text-lg hover:bg-white transition-all hover:-translate-y-0.5 hover:shadow-xl"
+          className="inline-block bg-[#C5A059] text-[#5D4337] px-10 py-4 rounded-full font-bold text-lg hover:bg-white transition-all hover:-translate-y-0.5 hover:shadow-xl"
         >
           🧮 Przejdź do Kalkulatora
         </Link>

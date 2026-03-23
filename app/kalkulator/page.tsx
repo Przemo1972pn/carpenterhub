@@ -37,11 +37,11 @@ export default function KalkulatorPage() {
       const { w: W, h: H, d: D, qty, name } = cab;
       for (let q = 0; q < qty; q++) {
         const cn = qty > 1 ? `${name} (${q + 1})` : name;
-        allElem.push({ name: 'Bok lewy', w: D - settings.thickness, h: H, mat: 'wiórowa', color: '#c17f3a', cab: cn });
-        allElem.push({ name: 'Bok prawy', w: D - settings.thickness, h: H, mat: 'wiórowa', color: '#c17f3a', cab: cn });
-        allElem.push({ name: 'Spód', w: W - 2 * settings.thickness, h: D - settings.thickness, mat: 'wiórowa', color: '#6a9fc0', cab: cn });
-        allElem.push({ name: 'Góra', w: W - 2 * settings.thickness, h: D - settings.thickness, mat: 'wiórowa', color: '#c06a6a', cab: cn });
-        allElem.push({ name: 'Tył (HDF)', w: W - 8, h: H - 8, mat: 'pilśniowa', color: '#5a9e6e', cab: cn });
+        allElem.push({ name: 'Bok lewy', w: D - settings.thickness, h: H, mat: 'wiórowa', color: '#C5A059', cab: cn });
+        allElem.push({ name: 'Bok prawy', w: D - settings.thickness, h: H, mat: 'wiórowa', color: '#C5A059', cab: cn });
+        allElem.push({ name: 'Spód', w: W - 2 * settings.thickness, h: D - settings.thickness, mat: 'wiórowa', color: '#7A5D4F', cab: cn });
+        allElem.push({ name: 'Góra', w: W - 2 * settings.thickness, h: D - settings.thickness, mat: 'wiórowa', color: '#5D4337', cab: cn });
+        allElem.push({ name: 'Tył (HDF)', w: W - 8, h: H - 8, mat: 'pilśniowa', color: '#3D2B24', cab: cn });
       }
     });
 
@@ -76,19 +76,19 @@ export default function KalkulatorPage() {
 
   return (
     <div className="min-h-screen bg-[#0f0d0b] text-[#f0ebe3] font-sans">
-      <nav className="flex items-center justify-between px-6 md:px-8 py-4 border-b border-stone-800 bg-[#0f0d0b]/95 sticky top-0 z-50 backdrop-blur-md">
-        <Link href="/" className="text-xl font-extrabold tracking-tight hover:opacity-80 transition-opacity">
-          🔨 <span className="text-white">Carpenter</span><span className="text-amber-500">Hub</span>
+      <nav className="flex items-center justify-between px-6 md:px-8 py-4 border-b border-[#C5A059] bg-[#0f0d0b]/95 sticky top-0 z-50 backdrop-blur-md">
+          <Link href="/" className="text-xl font-extrabold tracking-tight hover:opacity-80 transition-opacity">
+          🔨 <span className="text-[#C5A059]">Carpenter</span><span className="text-[#C5A059]">Hub</span>
         </Link>
         <div className="flex items-center gap-4">
-          <div className="flex gap-1 bg-stone-900 p-1 rounded-lg border border-stone-800">
+          <div className="flex gap-1 bg-[#C5A059] p-1 rounded-lg border border-[#C5A059]">
             {tabs.map(tab => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
                 className={`px-4 py-2 rounded-md text-sm font-bold transition-all ${
                   activeTab === tab.id
-                    ? 'bg-amber-500 text-black'
+                    ? 'bg-[#C5A059] text-[#2E2626]'
                     : 'text-stone-500 hover:text-stone-300'
                 }`}
               >

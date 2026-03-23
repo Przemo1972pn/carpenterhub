@@ -1,8 +1,25 @@
 @import "tailwindcss";
 
 :root {
+  /* Primary: Brown - dla stolarza */
+  --primary: #5D4337;
+  --primary-light: #7A5D4F;
+  --primary-dark: #3D2B24;
+  
+  /* Secondary: Dark brown/black */
+  --secondary: #2E2626;
+  --secondary-light: #4A3F3F;
+  
+  /* Tertiary: Gold/brass accent */
+  --tertiary: #C5A059;
+  --tertiary-light: #D4B978;
+  
+  /* Neutral: Off-white/cream */
+  --neutral: #F5F3F0;
+  --neutral-dark: #E8E4DF;
+  
   --background: #F5F3F0;
-  --foreground: #2C2C2C;
+  --foreground: #2E2626;
 }
 
 @theme inline {
@@ -14,48 +31,24 @@
 
 /* Landing Page Animations */
 @keyframes slideInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes slideInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Calculator Animations */
 @keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .animate-fadeUp {

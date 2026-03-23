@@ -9,7 +9,7 @@ export default function FAQ() {
   return (
     <section id="faq" className="py-20 px-5 bg-[#F5F3F0]">
       <div className="max-w-[800px] mx-auto">
-        <h2 className="text-4xl text-center mb-16 text-[#2D5016] font-bold relative pb-5 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-[#8B6F47] after:rounded">
+        <h2 className="text-4xl text-center mb-16 text-[#5D4337] font-bold relative pb-5 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-[#C5A059] after:rounded">
           Pytania i Odpowiedzi
         </h2>
         <div className="space-y-5">
@@ -17,7 +17,7 @@ export default function FAQ() {
             <div key={i} className="bg-white rounded-xl overflow-hidden shadow-sm">
               <button
                 onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                className="w-full bg-[#2D5016] text-white p-5 flex justify-between items-center font-semibold text-left hover:bg-[#4A7C2E] transition-colors"
+                className="w-full bg-[#5D4337] text-white p-5 flex justify-between items-center font-semibold text-left hover:bg-[#3D2B24] transition-colors"
               >
                 {faq.q}
                 <span className={`text-2xl transition-transform duration-300 ${openFaq === i ? 'rotate-45' : ''}`}>

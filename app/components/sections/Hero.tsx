@@ -7,7 +7,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative bg-gradient-to-br from-[#2D5016] to-[#1a3009] text-white py-24 px-5 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-[#5D4337] to-[#3D2B24] text-white py-24 px-5 overflow-hidden">
       <div className="absolute inset-0 opacity-30">
         <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
           <circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)" />
@@ -27,7 +27,7 @@ export default function Hero() {
         <a
           href="#contact"
           onClick={scrollToContact}
-          className="inline-block bg-[#D4AF37] text-[#2D5016] px-10 py-4 rounded-full font-bold text-base hover:bg-transparent hover:text-[#D4AF37] border-2 border-[#D4AF37] transition-all hover:-translate-y-0.5 hover:shadow-xl"
+          className="inline-block bg-[#C5A059] text-[#5D4337] px-10 py-4 rounded-full font-bold text-base hover:bg-transparent hover:text-[#C5A059] border-2 border-[#C5A059] transition-all hover:-translate-y-0.5 hover:shadow-xl"
         >
           Zapytaj o ofertę
         </a>
