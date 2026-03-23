@@ -12,7 +12,7 @@ export default function CalculatorCTA() {
         </p>
         <Link
           href="/kalkulator"
-          className="inline-block bg-[#C5A059] text-[#5D4337] px-10 py-4 rounded-full font-bold text-lg hover:bg-white transition-all hover:-translate-y-0.5 hover:shadow-xl"
+          className="inline-block bg-[#C5A059] text-[#5D4337] px-10 py-4 rounded-md font-bold text-lg hover:bg-white transition-all hover:-translate-y-0.5 hover:shadow-xl"
         >
           🧮 Przejdź do Kalkulatora
         </Link>

@@ -7,30 +7,30 @@ export const navLinks = [
 ];
 
 export const features = [
-  { icon: '📐', title: 'Precyzja 2026', desc: 'Nasz warsztat integruje 5-osiowe frezowanie CNC z laserowym wykończeniem połączeń dla submilimetrowej dokładności w każdym projekcie.' },
-  { icon: '🏺', title: 'Rzemieślnicza Selekcja', desc: 'Ręcznie dobieramy gatunki drewna na podstawie tekstury, gęstości i wzorów usłojenia, aby zapewnić architektoniczną perfekcję.' },
-  { icon: '🌍', title: 'Globalna Dostawa', desc: 'Logistyka z kontrolowaną klimatyzacją zapewnia, że Twoje niestandardowe wyroby z drewna dotrą w idealnej równowadze, w dowolne miejsce na świecie.' },
+  { icon: '🎯', title: 'Precyzja', desc: 'Każdy projekt wykonywany z najwyższą dokładnością i dbałością o szczegóły.' },
+  { icon: '⚡', title: 'Szybkość', desc: 'Terminowe realizacje bez kompromisów na jakości pracy.' },
+  { icon: '💎', title: 'Jakość', desc: 'Używamy tylko najlepszych materiałów i nowoczesnych technik.' },
 ];
 
 export const services = [
   {
-    icon: '🏢',
-    title: 'Meble Kuchenne',
-    desc: 'Ergonomiczne systemy wewnętrzne połączone z bezszwowymi frontami z orzecha lub jesionu.',
+    icon: '🛋️',
+    title: 'Meble na zamówienie',
+    desc: 'Projektujemy i wykonujemy meble dostosowane do Twoich potrzeb i wnętrza.',
     image: 'https://images.unsplash.com/photo-1556912177-c54030639a60?auto=format&fit=crop&q=80&w=800',
     items: ['Szafy i garderoby', 'Biurka i półki', 'Łóżka i stoły', 'Kuchnie drewniane'],
   },
   {
-    icon: '🛋️',
-    title: 'Meble na Zamówienie',
-    desc: 'Unikatowe dzieła, w tym rzeźbiarskie biurka, stoły i zestawy sypialniane.',
+    icon: '🏠',
+    title: 'Remonty i wykończenia',
+    desc: 'Kompleksowe usługi remontowe z drewnem w roli głównej.',
     image: 'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&q=80&w=800',
     items: ['Podłogi drewniane', 'Drzwi i okna', 'Panele ścienne', 'Sufity drewniane'],
   },
   {
-    icon: '🏛️',
-    title: 'Stolarka Architektoniczna',
-    desc: 'Kompleksowe panele ścienne, schody i zintegrowane elementy konstrukcyjne.',
+    icon: '�',
+    title: 'Projekty i konsultacje',
+    desc: 'Pomoc w wyborze materiałów i projektowaniu Twojego wnętrza.',
     image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800',
     items: ['Konsultacje projektowe', 'Wizualizacje 3D', 'Dobór materiałów', 'Kosztorysowanie'],
   },

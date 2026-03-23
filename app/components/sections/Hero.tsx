@@ -27,26 +27,26 @@ export default function Hero() {
           Craftsmanship meets Technology
         </span>
         <h1 className="text-6xl md:text-8xl font-serif font-light mb-8 leading-[1.1] animate-[slideInDown_0.8s_ease]">
-          The Soul of <br />
-          <span className="italic font-normal text-[#C5A059]">Fine Walnut</span>
+          Drewno. Cyfrowo. <br />
+          <span className="italic font-normal text-[#C5A059]">Zysk.</span>
         </h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl mb-12 text-white/80 font-light leading-relaxed animate-[slideInUp_0.8s_ease]">
-          Modernize your woodworking business with 2026 precision technology. 
-          Bridge the gap between traditional artistry and architectural excellence.
+          Profesjonalne usługi stolarskie dla Twojego biznesu. 
+          Nowoczesne podejście do tradycyjnego rzemiosła.
         </p>
         <div className="flex flex-col sm:flex-row gap-5 justify-center items-center animate-[fadeInUp_1s_ease]">
           <a
             href="#contact"
             onClick={scrollToContact}
-            className="w-full sm:w-auto bg-[#5D4337] text-white px-10 py-4 rounded-sm font-medium text-base hover:bg-[#3D2B24] transition-all hover:-translate-y-0.5"
+            className="w-full sm:w-auto bg-[#C5A059] text-[#2E2626] px-10 py-4 rounded-md font-medium text-base hover:bg-[#D4B978] transition-all hover:-translate-y-0.5"
           >
-            View Collection
+            Zapytaj o ofertę
           </a>
           <a
             href="/kalkulator"
-            className="w-full sm:w-auto bg-[#C5A059] text-[#2E2626] px-10 py-4 rounded-sm font-medium text-base hover:bg-[#D4B978] transition-all hover:-translate-y-0.5"
+            className="w-full sm:w-auto border border-[#C5A059] text-[#C5A059] px-10 py-4 rounded-md font-medium text-base hover:bg-[#C5A059] hover:text-[#2E2626] transition-all hover:-translate-y-0.5"
           >
-            Request Samples
+            Kalkulator Stolarski
           </a>
         </div>
       </div>

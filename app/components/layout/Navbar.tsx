@@ -41,7 +41,7 @@ export default function Navbar() {
         </ul>
         <Link 
           href="/kalkulator" 
-          className="bg-[#C5A059] text-[#5D4337] px-5 py-2.5 rounded-full font-bold hover:bg-transparent hover:text-[#C5A059] border-2 border-[#C5A059] transition-all"
+          className="bg-[#C5A059] text-[#2D5016] px-5 py-2.5 rounded-md font-bold hover:bg-transparent hover:text-[#C5A059] border-2 border-[#C5A059] transition-all"
         >
           🧮 Kalkulator
         </Link>

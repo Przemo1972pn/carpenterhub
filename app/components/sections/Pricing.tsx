@@ -41,13 +41,13 @@ export default function Pricing() {
               <a
                 href="#contact"
                 onClick={scrollToContact}
-                className={`block w-full text-center py-4 rounded-sm font-medium text-xs tracking-widest uppercase transition-all border ${
+                className={`block w-full text-center py-4 rounded-md font-medium text-xs tracking-widest uppercase transition-all border ${
                   p.featured 
                     ? 'bg-[#C5A059] text-[#2E2626] border-[#C5A059] hover:bg-transparent hover:text-[#C5A059]' 
                     : 'bg-transparent text-[#2E2626] border-stone-200 hover:border-[#C5A059] hover:text-[#C5A059]'
                 }`}
               >
-                {p.featured ? 'Apply for Pro' : 'Join Craft'}
+                {p.featured ? 'Zapytaj o ofertę Pro' : 'Wybierz Pakiet'}
               </a>
             </div>
           ))}

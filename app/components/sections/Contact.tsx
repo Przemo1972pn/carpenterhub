@@ -75,9 +75,9 @@ export default function Contact() {
               </div>
               <button
                 type="submit"
-                className="w-full bg-[#C5A059] text-[#2E2626] py-5 font-medium text-xs tracking-[0.2em] uppercase hover:bg-[#D4B978] transition-all"
+                className="w-full bg-[#C5A059] text-[#2E2626] py-5 rounded-md font-medium text-xs tracking-[0.2em] uppercase hover:bg-[#D4B978] transition-all"
               >
-                Submit Inquiry
+                Wyślij wiadomość
               </button>
             </form>
           </div>
