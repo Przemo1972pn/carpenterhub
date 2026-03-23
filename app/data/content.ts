@@ -7,30 +7,30 @@ export const navLinks = [
 ];
 
 export const features = [
-  { icon: '📐', title: '2026 Precision Tech', desc: 'Our workshop integrates 5-axis CNC routing with laser-finished joinery for sub-millimeter accuracy in every development.' },
-  { icon: '🏺', title: 'Artisanal Selection', desc: 'We hand-select wood types based on texture, density, and grain patterns to ensure architectural perfection.' },
-  { icon: '�', title: 'Global Delivery', desc: 'Climate-controlled logistics ensure your custom woodwork arrives in perfect equilibrium, anywhere in the world.' },
+  { icon: '📐', title: 'Precyzja 2026', desc: 'Nasz warsztat integruje 5-osiowe frezowanie CNC z laserowym wykończeniem połączeń dla submilimetrowej dokładności w każdym projekcie.' },
+  { icon: '🏺', title: 'Rzemieślnicza Selekcja', desc: 'Ręcznie dobieramy gatunki drewna na podstawie tekstury, gęstości i wzorów usłojenia, aby zapewnić architektoniczną perfekcję.' },
+  { icon: '🌍', title: 'Globalna Dostawa', desc: 'Logistyka z kontrolowaną klimatyzacją zapewnia, że Twoje niestandardowe wyroby z drewna dotrą w idealnej równowadze, w dowolne miejsce na świecie.' },
 ];
 
 export const services = [
   {
     icon: '🏢',
-    title: 'Kitchen Cabinetry',
-    desc: 'Ergonomic internal systems paired with seamless walnut or ash exteriors.',
+    title: 'Meble Kuchenne',
+    desc: 'Ergonomiczne systemy wewnętrzne połączone z bezszwowymi frontami z orzecha lub jesionu.',
     image: 'https://images.unsplash.com/photo-1556912177-c54030639a60?auto=format&fit=crop&q=80&w=800',
     items: ['Szafy i garderoby', 'Biurka i półki', 'Łóżka i stoły', 'Kuchnie drewniane'],
   },
   {
     icon: '🛋️',
-    title: 'Bespoke Furniture',
-    desc: 'One-of-one statement pieces including sculptural desks, tables, and bedroom suites.',
+    title: 'Meble na Zamówienie',
+    desc: 'Unikatowe dzieła, w tym rzeźbiarskie biurka, stoły i zestawy sypialniane.',
     image: 'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&q=80&w=800',
     items: ['Podłogi drewniane', 'Drzwi i okna', 'Panele ścienne', 'Sufity drewniane'],
   },
   {
-    icon: '�️',
-    title: 'Architectural Millwork',
-    desc: 'Complete wall paneling, staircases, and integrated structural elements.',
+    icon: '🏛️',
+    title: 'Stolarka Architektoniczna',
+    desc: 'Kompleksowe panele ścienne, schody i zintegrowane elementy konstrukcyjne.',
     image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800',
     items: ['Konsultacje projektowe', 'Wizualizacje 3D', 'Dobór materiałów', 'Kosztorysowanie'],
   },
