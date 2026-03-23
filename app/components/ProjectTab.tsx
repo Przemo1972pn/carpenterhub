@@ -51,7 +51,7 @@ export default function ProjectTab({
       <div className="text-center py-12 md:py-16">
         <h1 className="text-4xl md:text-6xl font-extrabold mb-4">
           Kalkulator<br />
-          <span className="text-amber-500">Stolarski</span>
+          <span className="text-[#C5A059]">Stolarski</span>
         </h1>
         <p className="text-stone-400 max-w-md mx-auto text-sm md:text-base">
           Dodaj wymiary szafek — obliczę elementy, zoptymalizuję rozkrój płyt wiórowych i HDF, wygeneruję listę zakupów.
@@ -60,7 +60,7 @@ export default function ProjectTab({
 
       <div className="bg-stone-900 border border-stone-800 rounded-xl p-6 mb-5">
         <div className="flex items-center gap-3 mb-5 pb-4 border-b border-stone-800">
-          <div className="w-9 h-9 bg-amber-900 rounded-lg flex items-center justify-center text-lg">
+          <div className="w-9 h-9 bg-[#5D4337] rounded-lg flex items-center justify-center text-lg">
             ⚙️
           </div>
           <div>
@@ -75,7 +75,7 @@ export default function ProjectTab({
               type="number"
               value={settings.sheetW}
               onChange={e => updateSetting('sheetW', e.target.value)}
-              className="bg-stone-800 border border-stone-700 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-amber-500"
+              className="bg-stone-800 border border-stone-700 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-[#C5A059]"
             />
           </div>
           <div className="flex flex-col gap-1">
@@ -84,7 +84,7 @@ export default function ProjectTab({
               type="number"
               value={settings.sheetH}
               onChange={e => updateSetting('sheetH', e.target.value)}
-              className="bg-stone-800 border border-stone-700 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-amber-500"
+              className="bg-stone-800 border border-stone-700 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-[#C5A059]"
             />
           </div>
           <div className="flex flex-col gap-1">
@@ -93,7 +93,7 @@ export default function ProjectTab({
               type="number"
               value={settings.sheetPrice}
               onChange={e => updateSetting('sheetPrice', e.target.value)}
-              className="bg-stone-800 border border-stone-700 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-amber-500"
+              className="bg-stone-800 border border-stone-700 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-[#C5A059]"
             />
           </div>
           <div className="flex flex-col gap-1">
@@ -102,7 +102,7 @@ export default function ProjectTab({
               type="number"
               value={settings.hdfW}
               onChange={e => updateSetting('hdfW', e.target.value)}
-              className="bg-stone-800 border border-stone-700 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-amber-500"
+              className="bg-stone-800 border border-stone-700 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-[#C5A059]"
             />
           </div>
           <div className="flex flex-col gap-1">
@@ -111,7 +111,7 @@ export default function ProjectTab({
               type="number"
               value={settings.hdfH}
               onChange={e => updateSetting('hdfH', e.target.value)}
-              className="bg-stone-800 border border-stone-700 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-amber-500"
+              className="bg-stone-800 border border-stone-700 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-[#C5A059]"
             />
           </div>
           <div className="flex flex-col gap-1">
@@ -120,7 +120,7 @@ export default function ProjectTab({
               type="number"
               value={settings.hdfPrice}
               onChange={e => updateSetting('hdfPrice', e.target.value)}
-              className="bg-stone-800 border border-stone-700 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-amber-500"
+              className="bg-stone-800 border border-stone-700 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-[#C5A059]"
             />
           </div>
           <div className="flex flex-col gap-1">
@@ -129,7 +129,7 @@ export default function ProjectTab({
               type="number"
               value={settings.kerf}
               onChange={e => updateSetting('kerf', e.target.value)}
-              className="bg-stone-800 border border-stone-700 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-amber-500"
+              className="bg-stone-800 border border-stone-700 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-[#C5A059]"
             />
           </div>
           <div className="flex flex-col gap-1">
@@ -138,7 +138,7 @@ export default function ProjectTab({
               type="number"
               value={settings.thickness}
               onChange={e => updateSetting('thickness', e.target.value)}
-              className="bg-stone-800 border border-stone-700 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-amber-500"
+              className="bg-stone-800 border border-stone-700 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-[#C5A059]"
             />
           </div>
           <div className="flex flex-col gap-1">
@@ -147,7 +147,7 @@ export default function ProjectTab({
               type="number"
               value={settings.hourRate}
               onChange={e => updateSetting('hourRate', e.target.value)}
-              className="bg-stone-800 border border-stone-700 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-amber-500"
+              className="bg-stone-800 border border-stone-700 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-[#C5A059]"
             />
           </div>
         </div>
@@ -155,7 +155,7 @@ export default function ProjectTab({
 
       <div className="bg-stone-900 border border-stone-800 rounded-xl p-6 mb-5">
         <div className="flex items-center gap-3 mb-5 pb-4 border-b border-stone-800">
-          <div className="w-9 h-9 bg-amber-900 rounded-lg flex items-center justify-center text-lg">
+          <div className="w-9 h-9 bg-[#5D4337] rounded-lg flex items-center justify-center text-lg">
             🗄️
           </div>
           <div>
@@ -167,13 +167,13 @@ export default function ProjectTab({
           {cabinets.map((c, i) => (
             <div key={c.id} className="bg-stone-800 border border-stone-700 rounded-xl p-4 grid grid-cols-2 md:grid-cols-6 gap-3 items-end">
               <div className="flex flex-col gap-1 col-span-2 md:col-span-1">
-                <div className="text-[10px] font-bold text-amber-500 uppercase tracking-wider">#{i + 1}</div>
+                <div className="text-[10px] font-bold text-[#C5A059] uppercase tracking-wider">#{i + 1}</div>
                 <label className="text-[10px] text-stone-500 uppercase tracking-wider font-mono">Nazwa</label>
                 <input
                   type="text"
                   value={c.name}
                   onChange={e => updateCab(c.id, 'name', e.target.value)}
-                  className="bg-stone-700 border border-stone-600 rounded-md px-3 py-2 text-sm focus:outline-none focus:border-amber-500"
+                  className="bg-stone-700 border border-stone-600 rounded-md px-3 py-2 text-sm focus:outline-none focus:border-[#C5A059]"
                 />
               </div>
               <div className="flex flex-col gap-1">
@@ -182,7 +182,7 @@ export default function ProjectTab({
                   type="number"
                   value={c.w}
                   onChange={e => updateCab(c.id, 'w', e.target.value)}
-                  className="bg-stone-700 border border-stone-600 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-amber-500"
+                  className="bg-stone-700 border border-stone-600 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-[#C5A059]"
                 />
               </div>
               <div className="flex flex-col gap-1">
@@ -191,7 +191,7 @@ export default function ProjectTab({
                   type="number"
                   value={c.h}
                   onChange={e => updateCab(c.id, 'h', e.target.value)}
-                  className="bg-stone-700 border border-stone-600 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-amber-500"
+                  className="bg-stone-700 border border-stone-600 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-[#C5A059]"
                 />
               </div>
               <div className="flex flex-col gap-1">
@@ -200,7 +200,7 @@ export default function ProjectTab({
                   type="number"
                   value={c.d}
                   onChange={e => updateCab(c.id, 'd', e.target.value)}
-                  className="bg-stone-700 border border-stone-600 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-amber-500"
+                  className="bg-stone-700 border border-stone-600 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-[#C5A059]"
                 />
               </div>
               <div className="flex flex-col gap-1">
@@ -210,7 +210,7 @@ export default function ProjectTab({
                   value={c.qty}
                   min={1}
                   onChange={e => updateCab(c.id, 'qty', e.target.value)}
-                  className="bg-stone-700 border border-stone-600 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-amber-500"
+                  className="bg-stone-700 border border-stone-600 rounded-md px-3 py-2 text-sm font-mono focus:outline-none focus:border-[#C5A059]"
                 />
               </div>
               <div className="flex justify-end">
@@ -226,15 +226,18 @@ export default function ProjectTab({
         </div>
         <button
           onClick={addCabinet}
-          className="w-full flex items-center justify-center gap-2 py-3 border border-dashed border-amber-800 rounded-lg text-amber-500 font-semibold text-sm hover:bg-amber-900/20 hover:border-amber-600 transition-colors"
+          className="w-full flex items-center justify-center gap-2 py-3 border border-dashed border-[#5D4337] rounded-lg text-[#C5A059] font-semibold text-sm hover:bg-[#5D4337]/20 hover:border-[#C5A059] transition-colors"
         >
           + Dodaj szafkę
         </button>
       </div>
 
       <button
-        onClick={onCalculate}
-        className="w-full py-5 bg-gradient-to-r from-amber-600 to-amber-400 rounded-xl text-black font-extrabold text-lg tracking-wide hover:-translate-y-0.5 hover:shadow-xl hover:shadow-amber-900/30 transition-all"
+        onClick={() => {
+          console.log('Calculating...');
+          onCalculate();
+        }}
+        className="w-full py-5 bg-gradient-to-r from-[#5D4337] to-[#C5A059] rounded-xl text-white font-extrabold text-lg tracking-wide hover:-translate-y-0.5 hover:shadow-xl hover:shadow-[#2E2626]/30 transition-all"
       >
         🔨 OBLICZ ROZKRÓJ I KOSZTY
       </button>
