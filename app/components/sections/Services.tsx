@@ -2,26 +2,39 @@ import { services } from '@/app/data/content';
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 px-5 bg-white">
+    <section id="services" className="py-32 px-5 bg-white">
       <div className="max-w-[1200px] mx-auto">
-        <h2 className="text-4xl text-center mb-16 text-[#5D4337] font-bold relative pb-5 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-[#C5A059] after:rounded">
-          Nasze Usługi
-        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-end mb-24">
+          <div>
+            <span className="text-[#C5A059] font-mono tracking-widest uppercase text-sm mb-4 block">Woodcraft 2026</span>
+            <h2 className="text-5xl md:text-6xl font-serif font-light text-[#2E2626] leading-tight">
+              Architectural <br /> Integration
+            </h2>
+          </div>
+          <p className="text-[#7A5D4F] text-lg font-light leading-relaxed max-w-md">
+            From residential sanctuaries to corporate headquarters, we realize our craftsmanship to match the vision.
+          </p>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((s, i) => (
             <div
               key={i}
-              className="bg-gradient-to-br from-[#5D4337] to-[#3D2B24] text-white p-10 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              className="group cursor-pointer"
             >
-              <h3 className="text-2xl mb-4 font-bold">{s.icon} {s.title}</h3>
-              <p className="mb-5 leading-relaxed">{s.desc}</p>
-              <ul className="list-none">
-                {s.items.map((item, j) => (
-                  <li key={j} className="py-2 pl-6 relative before:content-['✓'] before:absolute before:left-0 before:text-[#C5A059] before:font-bold">
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              <div className="relative overflow-hidden aspect-[4/5] mb-8 bg-[#F5F3F0]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img 
+                  src={s.image} 
+                  alt={s.title}
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-[#2E2626]/10 group-hover:bg-transparent transition-all duration-700"></div>
+              </div>
+              <h3 className="text-xl font-serif font-light text-[#2E2626] mb-3">{s.title}</h3>
+              <p className="text-[#7A5D4F] text-sm font-light mb-4 leading-relaxed">{s.desc}</p>
+              <span className="text-[10px] font-mono tracking-widest uppercase text-[#C5A059] group-hover:pl-2 transition-all duration-300">
+                Learn More —
+              </span>
             </div>
           ))}
         </div>

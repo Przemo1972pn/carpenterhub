@@ -7,31 +7,31 @@ export const navLinks = [
 ];
 
 export const features = [
-  { icon: '🎯', title: 'Precyzja', desc: 'Każdy projekt wykonywany z najwyższą dokładnością i dbałością o szczegóły.' },
-  { icon: '⚡', title: 'Szybkość', desc: 'Terminowe realizacje bez kompromisów na jakości pracy.' },
-  { icon: '💎', title: 'Jakość', desc: 'Używamy tylko najlepszych materiałów i nowoczesnych technik.' },
-  { icon: '🤝', title: 'Wsparcie', desc: 'Pełne wsparcie od konsultacji do realizacji i serwisu.' },
-  { icon: '💰', title: 'Konkurencyjne ceny', desc: 'Najlepszy stosunek jakości do ceny na rynku.' },
-  { icon: '🏆', title: 'Doświadczenie', desc: 'Ponad 15 lat doświadczenia w branży stolarskiej.' },
+  { icon: '📐', title: '2026 Precision Tech', desc: 'Our workshop integrates 5-axis CNC routing with laser-finished joinery for sub-millimeter accuracy in every development.' },
+  { icon: '🏺', title: 'Artisanal Selection', desc: 'We hand-select wood types based on texture, density, and grain patterns to ensure architectural perfection.' },
+  { icon: '�', title: 'Global Delivery', desc: 'Climate-controlled logistics ensure your custom woodwork arrives in perfect equilibrium, anywhere in the world.' },
 ];
 
 export const services = [
   {
-    icon: '🛋️',
-    title: 'Meble na zamówienie',
-    desc: 'Projektujemy i wykonujemy meble dostosowane do Twoich potrzeb i wnętrza.',
+    icon: '🏢',
+    title: 'Kitchen Cabinetry',
+    desc: 'Ergonomic internal systems paired with seamless walnut or ash exteriors.',
+    image: 'https://images.unsplash.com/photo-1556912177-c54030639a60?auto=format&fit=crop&q=80&w=800',
     items: ['Szafy i garderoby', 'Biurka i półki', 'Łóżka i stoły', 'Kuchnie drewniane'],
   },
   {
-    icon: '🏠',
-    title: 'Remonty i wykończenia',
-    desc: 'Kompleksowe usługi remontowe z drewnem w roli głównej.',
+    icon: '🛋️',
+    title: 'Bespoke Furniture',
+    desc: 'One-of-one statement pieces including sculptural desks, tables, and bedroom suites.',
+    image: 'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&q=80&w=800',
     items: ['Podłogi drewniane', 'Drzwi i okna', 'Panele ścienne', 'Sufity drewniane'],
   },
   {
-    icon: '🎨',
-    title: 'Projekty i konsultacje',
-    desc: 'Pomoc w wyborze materiałów i projektowaniu Twojego wnętrza.',
+    icon: '�️',
+    title: 'Architectural Millwork',
+    desc: 'Complete wall paneling, staircases, and integrated structural elements.',
+    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800',
     items: ['Konsultacje projektowe', 'Wizualizacje 3D', 'Dobór materiałów', 'Kosztorysowanie'],
   },
 ];

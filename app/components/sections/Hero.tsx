@@ -1,4 +1,4 @@
-import Link from 'next/link';
+'use client';
 
 export default function Hero() {
   const scrollToContact = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -7,30 +7,53 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative bg-gradient-to-br from-[#5D4337] to-[#3D2B24] text-white py-24 px-5 overflow-hidden">
-      <div className="absolute inset-0 opacity-30">
-        <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)" />
-          <circle cx="80" cy="80" r="3" fill="rgba(255,255,255,0.1)" />
-          <circle cx="50" cy="50" r="1.5" fill="rgba(255,255,255,0.1)" />
-          <circle cx="10" cy="70" r="2" fill="rgba(255,255,255,0.1)" />
-          <circle cx="90" cy="30" r="2.5" fill="rgba(255,255,255,0.1)" />
-        </svg>
-      </div>
-      <div className="max-w-[1200px] mx-auto text-center relative z-10">
-        <h1 className="text-5xl md:text-6xl font-bold mb-5 animate-[slideInDown_0.8s_ease]">
-          Drewno. Cyfrowo. Zysk.
+    <section className="relative min-h-[90vh] flex items-center justify-center text-white px-5 overflow-hidden">
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="/Film_o_aplikacji_dla_stolarzu.mp4" type="video/mp4" />
+      </video>
+      
+      {/* Overlay for readability */}
+      <div className="absolute inset-0 bg-[#2E2626]/60 backdrop-blur-[2px]"></div>
+
+      <div className="max-w-[1200px] mx-auto text-center relative z-10 py-20">
+        <span className="inline-block text-[#C5A059] font-mono tracking-[0.3em] uppercase text-sm mb-6 animate-[fadeInUp_0.8s_ease]">
+          Craftsmanship meets Technology
+        </span>
+        <h1 className="text-6xl md:text-8xl font-serif font-light mb-8 leading-[1.1] animate-[slideInDown_0.8s_ease]">
+          The Soul of <br />
+          <span className="italic font-normal text-[#C5A059]">Fine Walnut</span>
         </h1>
-        <p className="text-xl md:text-2xl mb-10 text-white/90 animate-[slideInUp_0.8s_ease]">
-          Profesjonalne usługi stolarskie dla Twojego biznesu
+        <p className="max-w-2xl mx-auto text-lg md:text-xl mb-12 text-white/80 font-light leading-relaxed animate-[slideInUp_0.8s_ease]">
+          Modernize your woodworking business with 2026 precision technology. 
+          Bridge the gap between traditional artistry and architectural excellence.
         </p>
-        <a
-          href="#contact"
-          onClick={scrollToContact}
-          className="inline-block bg-[#C5A059] text-[#5D4337] px-10 py-4 rounded-full font-bold text-base hover:bg-transparent hover:text-[#C5A059] border-2 border-[#C5A059] transition-all hover:-translate-y-0.5 hover:shadow-xl"
-        >
-          Zapytaj o ofertę
-        </a>
+        <div className="flex flex-col sm:flex-row gap-5 justify-center items-center animate-[fadeInUp_1s_ease]">
+          <a
+            href="#contact"
+            onClick={scrollToContact}
+            className="w-full sm:w-auto bg-[#5D4337] text-white px-10 py-4 rounded-sm font-medium text-base hover:bg-[#3D2B24] transition-all hover:-translate-y-0.5"
+          >
+            View Collection
+          </a>
+          <a
+            href="/kalkulator"
+            className="w-full sm:w-auto bg-[#C5A059] text-[#2E2626] px-10 py-4 rounded-sm font-medium text-base hover:bg-[#D4B978] transition-all hover:-translate-y-0.5"
+          >
+            Request Samples
+          </a>
+        </div>
+      </div>
+
+      {/* Elegant scroll indicator */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+        <div className="w-[1px] h-12 bg-white/50 mx-auto"></div>
       </div>
     </section>
   );

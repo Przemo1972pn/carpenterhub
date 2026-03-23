@@ -7,42 +7,48 @@ export default function Pricing() {
   };
 
   return (
-    <section id="pricing" className="py-20 px-5 bg-[#F5F3F0]">
-      <div className="max-w-[1200px] mx-auto">
-        <h2 className="text-4xl text-center mb-16 text-[#5D4337] font-bold relative pb-5 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-[#C5A059] after:rounded">
-          Pakiety Cenowe
+    <section id="pricing" className="py-32 px-5 bg-[#F5F3F0]">
+      <div className="max-w-[1200px] mx-auto text-center">
+        <span className="text-[#C5A059] font-mono tracking-widest uppercase text-xs mb-4 block">Partnership Path</span>
+        <h2 className="text-5xl font-serif font-light text-[#2E2626] mb-20 leading-tight">
+          Select Your Craft Path
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 max-w-[1000px] mx-auto">
           {pricing.map((p, i) => (
             <div
               key={i}
-              className={`bg-white rounded-xl overflow-hidden transition-all duration-300 shadow-md hover:shadow-xl ${
-                p.featured ? 'scale-105 border-2 border-[#C5A059]' : ''
+              className={`bg-white p-12 border border-stone-200 transition-all duration-500 hover:shadow-2xl ${
+                p.featured ? 'bg-[#2E2626] text-white border-[#C5A059] scale-105 z-10' : 'text-[#2E2626]'
               }`}
             >
-              <div className="bg-[#5D4337] text-white p-8 text-center">
-                <h3 className="text-2xl mb-2.5 font-bold">{p.name}</h3>
-                <div className="text-4xl font-extrabold my-4">
-                  od {p.price} <span className="text-lg font-normal">zł</span>
-                </div>
-                <p>{p.desc}</p>
+              <span className={`text-[10px] font-mono tracking-widest uppercase mb-4 block ${p.featured ? 'text-[#C5A059]' : 'text-[#7A5D4F]'}`}>
+                {p.name}
+              </span>
+              <div className="text-4xl font-serif font-light mb-2">
+                ${p.price} <span className="text-sm font-sans italic opacity-60">/ proj.</span>
               </div>
-              <div className="p-8">
-                <ul className="list-none mb-8">
-                  {p.features.map((f, j) => (
-                    <li key={j} className="py-3 border-b border-gray-100 text-[#666] before:content-['✓_'] before:text-[#5D4337] before:font-bold">
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-                <a
-                  href="#contact"
-                  onClick={scrollToContact}
-                  className="block w-full text-center bg-[#C5A059] text-[#5D4337] py-3 rounded-full font-bold hover:bg-transparent hover:text-[#5D4337] border-2 border-[#C5A059] transition-all"
-                >
-                  Zapytaj
-                </a>
-              </div>
+              <p className={`text-sm font-light mb-10 ${p.featured ? 'text-white/60' : 'text-[#7A5D4F]'}`}>{p.desc}</p>
+              
+              <ul className="text-left space-y-4 mb-12">
+                {p.features.map((f, j) => (
+                  <li key={j} className="flex items-start gap-3 text-xs font-light">
+                    <span className="text-[#C5A059] mt-1">●</span>
+                    <span className={p.featured ? 'text-white/80' : 'text-[#2E2626]'}>{f}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <a
+                href="#contact"
+                onClick={scrollToContact}
+                className={`block w-full text-center py-4 rounded-sm font-medium text-xs tracking-widest uppercase transition-all border ${
+                  p.featured 
+                    ? 'bg-[#C5A059] text-[#2E2626] border-[#C5A059] hover:bg-transparent hover:text-[#C5A059]' 
+                    : 'bg-transparent text-[#2E2626] border-stone-200 hover:border-[#C5A059] hover:text-[#C5A059]'
+                }`}
+              >
+                {p.featured ? 'Apply for Pro' : 'Join Craft'}
+              </a>
             </div>
           ))}
         </div>
