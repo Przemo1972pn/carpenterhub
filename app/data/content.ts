@@ -1,77 +1,81 @@
 export const navLinks = [
-  { href: '#features', label: 'Strona główna' },
+  { href: '#features', label: 'Dlaczego My' },
   { href: '#services', label: 'Usługi' },
   { href: '#pricing', label: 'Cennik' },
   { href: '#testimonials', label: 'Opinie' },
+  { href: '#faq', label: 'FAQ' },
   { href: '#contact', label: 'Kontakt' },
 ];
 
 export const features = [
-  { icon: '🎯', title: 'Precyzja', desc: 'Każdy projekt wykonywany z najwyższą dokładnością i dbałością o szczegóły.' },
-  { icon: '⚡', title: 'Szybkość', desc: 'Terminowe realizacje bez kompromisów na jakości pracy.' },
-  { icon: '💎', title: 'Jakość', desc: 'Używamy tylko najlepszych materiałów i nowoczesnych technik.' },
+  { icon: '🎯', title: 'Doświadczenie', desc: 'Ponad 15 lat doświadczenia w branży stolarskiej. Wiemy, jak tworzyć meble, które trwają.' },
+  { icon: '⭐', title: 'Najwyższa Jakość', desc: 'Używamy tylko najlepszych materiałów i nowoczesnych technik produkcji.' },
+  { icon: '🎨', title: 'Indywidualny Podejście', desc: 'Każdy projekt jest unikatowy. Dostosowujemy się do Twoich potrzeb i marzeń.' },
+  { icon: '💰', title: 'Konkurencyjne Ceny', desc: 'Oferujemy najlepszy stosunek jakości do ceny na rynku.' },
+  { icon: '⚡', title: 'Szybka Realizacja', desc: 'Realizujemy projekty w ustalonych terminach bez kompromisów na jakości.' },
+  { icon: '🤝', title: 'Obsługa Klienta', desc: 'Zawsze dostępni do konsultacji. Twoja satysfakcja to nasza gwarancja.' },
 ];
 
 export const services = [
   {
     icon: '🛋️',
-    title: 'Meble na zamówienie',
-    desc: 'Projektujemy i wykonujemy meble dostosowane do Twoich potrzeb i wnętrza.',
+    title: 'Meble na Zamówienie',
+    desc: 'Projektujemy i wykonujemy meble dostosowane do Twoich potrzeb:',
     image: 'https://images.unsplash.com/photo-1556912177-c54030639a60?auto=format&fit=crop&q=80&w=800',
-    items: ['Szafy i garderoby', 'Biurka i półki', 'Łóżka i stoły', 'Kuchnie drewniane'],
+    items: ['Szafy i garderoby', 'Kuchnie drewniane', 'Biurka i półki', 'Łóżka i stoły'],
   },
   {
-    icon: '🏠',
-    title: 'Remonty i wykończenia',
-    desc: 'Kompleksowe usługi remontowe z drewnem w roli głównej.',
+    icon: '🔨',
+    title: 'Remonty i Renowacja',
+    desc: 'Profesjonalne usługi remontowe:',
     image: 'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&q=80&w=800',
-    items: ['Podłogi drewniane', 'Drzwi i okna', 'Panele ścienne', 'Sufity drewniane'],
+    items: ['Renowacja mebli', 'Naprawa drewna', 'Zabudowy ścienne', 'Prace wykończeniowe'],
   },
   {
-    icon: '�',
-    title: 'Projekty i konsultacje',
-    desc: 'Pomoc w wyborze materiałów i projektowaniu Twojego wnętrza.',
+    icon: '🎨',
+    title: 'Projekty Drewniane',
+    desc: 'Unikalne projekty dla Twojego domu:',
     image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800',
-    items: ['Konsultacje projektowe', 'Wizualizacje 3D', 'Dobór materiałów', 'Kosztorysowanie'],
+    items: ['Drewniane dekoracje', 'Elementy architektoniczne', 'Drewniane schody', 'Niestandardowe rozwiązania'],
   },
 ];
 
 export const pricing = [
   {
     name: 'Starter',
-    price: '2 000',
-    desc: 'Idealne dla małych projektów',
-    features: ['Konsultacja projektowa', 'Projekt podstawowy', 'Wykonanie prac', 'Materiały podstawowe', 'Gwarancja 1 rok'],
+    price: '500',
+    desc: 'Idealne do małych projektów',
+    features: ['Konsultacja projektu', 'Materiały podstawowe', 'Montaż i dostawa', 'Gwarancja 1 rok'],
     featured: false,
   },
   {
-    name: '⭐ Professional',
-    price: '5 000',
+    name: 'Professional',
+    price: '1500',
     desc: 'Najpopularniejszy pakiet',
-    features: ['Konsultacja rozszerzona', 'Projekt zaawansowany', 'Wizualizacja 3D', 'Materiały premium', 'Gwarancja 3 lata', 'Serwis bezpłatny'],
+    features: ['Pełna konsultacja', 'Materiały premium', 'Projekt 3D', 'Montaż i dostawa', 'Gwarancja 3 lata'],
     featured: true,
   },
   {
     name: 'Premium',
-    price: '10 000',
-    desc: 'Dla wymagających klientów',
-    features: ['Pełna konsultacja', 'Projekt indywidualny', 'Wizualizacja 4K', 'Materiały luksusowe', 'Gwarancja 5 lat', 'Serwis priorytetowy'],
+    price: '3000+',
+    desc: 'Dla wymagających projektów',
+    features: ['Pełna personalizacja', 'Materiały luksusowe', 'Projekt 3D + wizualizacja', 'Montaż profesjonalny', 'Gwarancja dożywotnia'],
     featured: false,
   },
 ];
 
 export const testimonials = [
-  { text: 'Fantastyczna robota! Meble wykonane na najwyższym poziomie. Polecam każdemu!', author: 'Anna Kowalski' },
-  { text: 'Profesjonalizm i szybkość realizacji. Dokładnie to, czego szukałem.', author: 'Piotr Nowak' },
-  { text: 'Najlepsza inwestycja w moje mieszkanie. Polecam CarpenterHub!', author: 'Maria Lewandowska' },
+  { text: 'Fantastyczna praca! Meble są piękne i trwałe. Polecam wszystkim!', author: 'Anna Kowalska' },
+  { text: 'Profesjonalizm na najwyższym poziomie. Realizacja przed terminem!', author: 'Piotr Nowak' },
+  { text: 'Najlepszy stosunek jakości do ceny. Bardzo zadowolony z efektu końcowego.', author: 'Maria Lewandowska' },
 ];
 
 export const faqs = [
-  { q: 'Jak długo trwa realizacja projektu?', a: 'Czas realizacji zależy od złożoności projektu. Zwykle wynosi 2-4 tygodnie. Dokładny termin ustalamy na etapie konsultacji.' },
-  { q: 'Czy oferujecie gwarancję?', a: 'Tak, oferujemy gwarancję. Długość gwarancji zależy od wybranego pakietu: Starter - 1 rok, Professional - 3 lata, Premium - 5 lat.' },
+  { q: 'Jaki jest czas realizacji projektu?', a: 'Czas realizacji zależy od złożoności projektu. Zwykle wynosi 2-4 tygodnie. Dokładny termin ustalamy na etapie konsultacji.' },
+  { q: 'Czy oferujecie dostawę?', a: 'Tak, oferujemy dostawę i montaż. Koszt dostawy zależy od lokalizacji i wielkości zamówienia.' },
+  { q: 'Jakie materiały wykorzystujecie?', a: 'Używamy drewna naturalnego (dąb, jesion, klon) oraz materiałów ekologicznych. Wszystkie materiały są certyfikowane.' },
   { q: 'Czy mogę zmienić projekt po jego zatwierdzeniu?', a: 'Tak, możliwe są zmiany. Jednak zmiana projektu po rozpoczęciu produkcji może wiązać się z dodatkowymi kosztami.' },
-  { q: 'Jakie materiały stosujecie?', a: 'Używamy drewna naturalnego (dąb, jesion, klon) oraz materiałów ekologicznych. Wszystkie materiały są certyfikowane.' },
-  { q: 'Czy oferujecie dostawę i montaż?', a: 'Tak, oferujemy dostawę i montaż. Koszt dostawy zależy od lokalizacji i wielkości zamówienia.' },
+  { q: 'Jaką gwarancję oferujecie?', a: 'Gwarancja zależy od wybranego pakietu: Starter - 1 rok, Professional - 3 lata, Premium - dożywotnia.' },
 ];
 
 export const contactInfo = [

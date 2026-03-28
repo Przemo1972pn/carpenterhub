@@ -27,12 +27,13 @@ export default function Hero() {
           Craftsmanship meets Technology
         </span>
         <h1 className="text-6xl md:text-8xl font-serif font-light mb-8 leading-[1.1] animate-[slideInDown_0.8s_ease]">
-          Drewno. Cyfrowo. <br />
-          <span className="italic font-normal text-[#C5A059]">Zysk.</span>
+          CarpenterHub
         </h1>
-        <p className="max-w-2xl mx-auto text-lg md:text-xl mb-12 text-white/80 font-light leading-relaxed animate-[slideInUp_0.8s_ease]">
-          Profesjonalne usługi stolarskie dla Twojego biznesu. 
-          Nowoczesne podejście do tradycyjnego rzemiosła.
+        <p className="max-w-2xl mx-auto text-lg md:text-xl mb-4 text-white/80 font-light leading-relaxed animate-[slideInUp_0.8s_ease]">
+          Profesjonalne Usługi Stolarskie
+        </p>
+        <p className="max-w-2xl mx-auto text-base md:text-lg mb-12 text-white/60 font-light leading-relaxed animate-[slideInUp_0.8s_ease]">
+          Meble na zamówienie • Remonty • Projekty drewniane
         </p>
         <div className="flex flex-col sm:flex-row gap-5 justify-center items-center animate-[fadeInUp_1s_ease]">
           <a
@@ -40,13 +41,7 @@ export default function Hero() {
             onClick={scrollToContact}
             className="w-full sm:w-auto bg-[#C5A059] text-[#2E2626] px-10 py-4 rounded-md font-medium text-base hover:bg-[#D4B978] transition-all hover:-translate-y-0.5"
           >
-            Zapytaj o ofertę
-          </a>
-          <a
-            href="/kalkulator"
-            className="w-full sm:w-auto border border-[#C5A059] text-[#C5A059] px-10 py-4 rounded-md font-medium text-base hover:bg-[#C5A059] hover:text-[#2E2626] transition-all hover:-translate-y-0.5"
-          >
-            Kalkulator Stolarski
+            Skontaktuj się z nami
           </a>
         </div>
       </div>
