@@ -4,11 +4,12 @@ import { useState } from 'react';
 import ProjectTab from '../components/ProjectTab';
 import ResultsTab from '../components/ResultsTab';
 import ShoppingTab from '../components/ShoppingTab';
+import VisualizationTab from '../components/VisualizationTab';
 import { Cabinet, MaterialSettings, Element, CalculationResult } from '../types';
 import { packSheets } from '../utils';
 import Link from 'next/link';
 
-type TabId = 'input' | 'results' | 'shopping';
+type TabId = 'input' | 'results' | 'shopping' | 'visualization';
 
 export default function KalkulatorPage() {
   const [activeTab, setActiveTab] = useState<TabId>('input');
@@ -72,6 +73,7 @@ export default function KalkulatorPage() {
     { id: 'input' as TabId, label: '📐 Projekt' },
     { id: 'results' as TabId, label: '📊 Wyniki' },
     { id: 'shopping' as TabId, label: '🛒 Zakupy' },
+    { id: 'visualization' as TabId, label: '🪵 Wizualizacja' },
   ];
 
   return (
@@ -121,6 +123,7 @@ export default function KalkulatorPage() {
           <ResultsTab result={result} settings={settings} cabinets={cabinets} />
         )}
         {activeTab === 'shopping' && <ShoppingTab result={result} settings={settings} />}
+        {activeTab === 'visualization' && <VisualizationTab cabinets={cabinets} />}
       </main>
     </div>
   );
