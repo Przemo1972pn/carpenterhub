@@ -1,0 +1,63 @@
+/* Scope all our Vanilla CSS to the #carpenter-app container */
+#carpenter-app {
+  --primary: #d4a373;      
+  --primary-hover: #faedcd;
+  --bg-dark: #121212;     
+  --bg-card: #1e1e1e;     
+  --bg-glass: rgba(30, 30, 30, 0.7); 
+  --text-main: #f8f9fa;
+  --text-muted: #adb5bd;
+  --border-color: rgba(212, 163, 115, 0.2);
+  --border-radius-lg: 16px;
+  --border-radius-md: 12px;
+  --transition: all 0.3s ease;
+
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+#carpenter-app * {
+  box-sizing: border-box;
+}
+
+/* Glassmorphism helpers */
+#carpenter-app .glass-panel {
+  background: var(--bg-glass);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+#carpenter-app h1, 
+#carpenter-app h2, 
+#carpenter-app h3, 
+#carpenter-app h4 {
+  margin-top: 0;
+  color: var(--text-main);
+}
+
+#carpenter-app button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: var(--transition);
+}
+
+#carpenter-app .btn-primary {
+  background-color: var(--primary);
+  color: #121212;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+
+#carpenter-app .btn-primary:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
