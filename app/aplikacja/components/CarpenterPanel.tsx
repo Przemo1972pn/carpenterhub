@@ -5,12 +5,24 @@ import { appointments } from '../data/mockData';
 import { Calculator, Clock } from 'lucide-react';
 
 export default function CarpenterPanel() {
-  const [materialCalc, setMaterialCalc] = useState({ length: '', width: '', depth: '', cost: null as string | null });
+  const [materialCalc, setMaterialCalc] = useState({ length: '', width: '', height: '', depth: '', cost: null as string | null });
 
   const calculateCost = () => {
-    const vol = (parseFloat(materialCalc.length) * parseFloat(materialCalc.width) * parseFloat(materialCalc.depth)) / 1000000;
+    const l = parseFloat(materialCalc.length) || 1;
+    const w = parseFloat(materialCalc.width) || 1;
+    const h = parseFloat(materialCalc.height) || 1;
+    const d = parseFloat(materialCalc.depth) || 1;
+    
+    // Obliczenie objętości drewna uwzględniające opcjonalną wysokość.
+    // Dzielimy przez odpowiednią potęgę w zależności od ilości użytych wymiarów, 
+    // aby otrzymać prawidłowo M3 zakładając, że podano wymiary w cm.
+    const dimensionsUsed = [materialCalc.length, materialCalc.width, materialCalc.height, materialCalc.depth].filter(Boolean).length;
+    const divisor = Math.pow(100, dimensionsUsed);
+    
+    const vol = (l * w * h * d) / (divisor || 1000000);
     const pricePerM3 = 3500;
-    if (!isNaN(vol)) {
+    
+    if (dimensionsUsed > 0) {
       setMaterialCalc(prev => ({ ...prev, cost: (vol * pricePerM3).toFixed(2) }));
     }
   };
@@ -47,6 +59,10 @@ export default function CarpenterPanel() {
             <div>
               <label>Szerokość (cm)</label>
               <input type="number" style={inputStyle} value={materialCalc.width} onChange={e => setMaterialCalc({...materialCalc, width: e.target.value})} />
+            </div>
+            <div>
+              <label>Wysokość (cm)</label>
+              <input type="number" style={inputStyle} value={materialCalc.height} onChange={e => setMaterialCalc({...materialCalc, height: e.target.value})} />
             </div>
             <div>
               <label>Grubość (cm)</label>
