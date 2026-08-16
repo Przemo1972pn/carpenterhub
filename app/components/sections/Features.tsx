@@ -5,10 +5,15 @@ export default function Features() {
     <section id="features" className="py-32 px-5 bg-[#F5F3F0]">
       <div className="max-w-[1200px] mx-auto">
         <div className="mb-24">
-          <span className="text-[#C5A059] font-mono tracking-widest uppercase text-sm mb-4 block">Engineered</span>
+          <span className="text-[#C5A059] font-mono tracking-widest uppercase text-sm mb-4 block">Twój cyfrowy pomocnik</span>
           <h2 className="text-5xl md:text-6xl font-serif font-light text-[#2E2626] leading-tight">
-            Engineered Excellence
+            Oto, jak odmienimy Twój dzień pracy
           </h2>
+          <p className="mt-8 max-w-2xl text-lg text-[#7A5D4F] font-light leading-relaxed">
+            Codziennie tworzysz niepowtarzalne meble, wkładasz w to serce i umiejętności. Pracujemy nad
+            aplikacją, która ma być Twoim prawdziwym cyfrowym pomocnikiem – stworzonym przez stolarzy,
+            dla stolarzy.
+          </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
           {features.map((f, i) => (
