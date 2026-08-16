@@ -8,12 +8,36 @@ export const navLinks = [
 ];
 
 export const features = [
-  { icon: '🎯', title: 'Doświadczenie', desc: 'Ponad 15 lat doświadczenia w branży stolarskiej. Wiemy, jak tworzyć meble, które trwają.' },
-  { icon: '⭐', title: 'Najwyższa Jakość', desc: 'Używamy tylko najlepszych materiałów i nowoczesnych technik produkcji.' },
-  { icon: '🎨', title: 'Indywidualny Podejście', desc: 'Każdy projekt jest unikatowy. Dostosowujemy się do Twoich potrzeb i marzeń.' },
-  { icon: '💰', title: 'Konkurencyjne Ceny', desc: 'Oferujemy najlepszy stosunek jakości do ceny na rynku.' },
-  { icon: '⚡', title: 'Szybka Realizacja', desc: 'Realizujemy projekty w ustalonych terminach bez kompromisów na jakości.' },
-  { icon: '🤝', title: 'Obsługa Klienta', desc: 'Zawsze dostępni do konsultacji. Twoja satysfakcja to nasza gwarancja.' },
+  {
+    icon: '⚡',
+    title: 'Błyskawiczne i precyzyjne wyceny',
+    desc: 'Zapomnij o ryzyku pomyłki. Wprowadzasz dane projektu, a aplikacja liczy koszt materiałów (z optymalizacją rozkroju płyt), robociznę i Twój zasłużony zysk.',
+  },
+  {
+    icon: '📋',
+    title: 'Koniec z chaosem w zamówieniach',
+    desc: 'Automatyczne listy potrzebnych okuć, uchwytów i prowadnic. Mniej stresu, więcej porządku w warsztacie.',
+  },
+  {
+    icon: '⏱️',
+    title: 'Czas to pieniądz – odzyskaj go',
+    desc: 'Skróć godziny spędzone nad papierkową robotą. Skup się na mistrzowskim wykonaniu, a żmudne obliczenia zostaw technologii.',
+  },
+  {
+    icon: '🤝',
+    title: 'Profesjonalizm, który docenią klienci',
+    desc: 'Szybka, klarowna i dokładna oferta to Twoja najlepsza wizytówka.',
+  },
+  {
+    icon: '🔌',
+    title: 'W planach – jeszcze więcej',
+    desc: 'Docelowo aplikacja połączy się z cennikami Twoich ulubionych hurtowni, dając Ci zawsze aktualny obraz kosztów.',
+  },
+  {
+    icon: '🛠️',
+    title: 'Stworzone przez stolarzy, dla stolarzy',
+    desc: 'To nie kolejny gadżet, tylko narzędzie z warsztatu. Jesteśmy na etapie tworzenia i Twoje doświadczenie realnie kształtuje jego finalny wygląd.',
+  },
 ];
 
 export const services = [
